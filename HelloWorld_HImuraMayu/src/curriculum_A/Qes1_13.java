@@ -36,41 +36,41 @@ public class Qes1_13 {
 	
 		
 		
-	//2.
+	// 2.
 		
-		// 初期値7で初期化
-		b=7;
+		// 初期値0で初期化
+		b=0;
 		System.out.println(b);
 		
-		// 初期値6で初期化
-		s=6;
+		// 初期値0で初期化
+		s=0;
 		System.out.println(s);
 		
-		// 初期値5で初期化
-		i=5;
+		// 初期値0で初期化
+		i=0;
 		System.out.println(i);
 		
-		// 初期値4で初期化
-		l=4;
+		// 初期値0Lで初期化
+		l=0L;
 		System.out.println(l);
 		
-		// 初期値3で初期化
-		f=3;
+		// 初期値0.0fで初期化
+		f=0.0f;
 		System.out.println(f);
 		
-		// 初期値2で初期化
-		d=2;
+		// 初期値0.0で初期化
+		d=0.0;
 		System.out.println(d);
 		
-		// 初期値rで初期化
-		letter='r';
+		// 初期値\u0000で初期化
+		letter='\u0000';
 		System.out.println(letter);
 		
-		// 初期値itsで初期化
-		name="its";
+		// 初期値nullで初期化
+		name="null";
 		System.out.println(name);
 		
-		// 初期値trueで初期化
+		// 初期値falseで初期化
 		isJavaFun =false;
 		System.out.println(isJavaFun);	
 	
@@ -102,7 +102,7 @@ public class Qes1_13 {
 		System.out.println(d);
 		
 		// char型（文字型）の変数letterにaを代入する
-		letter='a';
+		letter= 'a';
 		System.out.println(letter);
 		
 		// Spring型（文字列型）の変数nameにハローを代入する
@@ -126,17 +126,17 @@ public class Qes1_13 {
 		System.out.println(b*2);
 		
 		// a ハロー true
-		letter='a'; //char型（文字型）の変数letterにaを代入する
-		String str1 = " "; // スペースを表す文字列
-		name="ハロー"; //Spring型（文字列型）の変数nameにハローを代入する
-		String str2 =" "; // スペースを表す文字列
-		isJavaFun= true;
-		System.out.println(letter +str1+ name +str2 + isJavaFun);
+		System.out.println(letter+ " " + name + " " + isJavaFun);
 		// char型　Spring型　boolean型を結合しても型変換なしでいいのか？
+	    // 間の空白は、変数で持たず、System.out.printlnの時に、
+		// 空白を文字列結合で直接記載しましょう
+	    //　例：System.out.println(letter + "  " + name);
+		
 		
 		// 11130
 		// 数字を全て足す
-		System.out.println((b+s+i+l)+b*2);
+	    System.out.println((b+s+i+l)+b*2);
+		
 		
 		// 10000000000
 		// 小数点以外の数字を全てかける
@@ -194,16 +194,77 @@ public class Qes1_13 {
 		// BMIの計算式（BMIは少数第一位で表されることが多いためdouble型）
 		double high = 170.5;
 		double weight = 62.5;
-		System.out.println(weight/((high*high)/10000.0));
+		System.out.println(Math.ceil(weight/((high*high)/10000.0)));
+		//Math.ceilで小数点一桁まで表示
+		
+	// 8.
+		// 初めまして鈴木一郎です
+		name= "鈴木一郎";
+		System.out.println("初めまして"+ name + "です");
+		
+		// 年齢は24歳です
+		i=24;
+		System.out.println("年齢は"+ i + "歳です");
+		
+		// 身長168.5cmです
+		d=168.5;
+		System.out.println("身長は"+ d + "cmです");
+		
+		// 体重は64.2kgです
+		d=64.2;
+		System.out.println("体重は"+ d + "kgです");
+		
+		// 好きな食べ物はオムライスです
+		name="オムライス";
+		System.out.println("好きな食べ物は"+ name + "です");
+		
+		// BMIは22.6です
+		   // BMI= 体重（kg）÷ {身長（m)の2乗/10000.0}
+		   // BMIの計算式（BMIは少数第一位で表されることが多いためdouble型）
+		double high1 = 168.5;
+		double weight1 = 64.2;
+		System.out.println(Math.floor(weight1/((high1*high1)/10000.0)));
+		// Math.ceilで小数点一桁まで表示(小数点第一位は切り上げ)
+		
+	// 9.
+		// 初めまして鈴木一郎です
+		name= "鈴木一郎";
+		System.out.println("初めまして"+ name + "です");
+		
+		// 年齢は48歳です
+		i=24;
+		i= i + 24;
+		System.out.println("年齢は"+ i + "歳です");
+		
+		// 身長337.0cmです
+		d=168.5;
+		d= d + 168.5;
+		System.out.println("身長は"+ d + "cmです");
+		
+		// 体重は128.4kgです
+		d=64.2;
+		d= d + 64.2;
+		System.out.println("体重は"+ d + "kgです");
+		
+		// 好きな食べ物はオムライスです
+		name="オムライス";
+		System.out.println("好きな食べ物は"+ name + "です");
 	
+		// BMIは11.31です
+		  // BMI= 体重（kg）÷ {身長（m)の2乗/10000.0}
+		  // BMIの計算式（BMIは少数第一位で表されることが多いためdouble型）
+		high1 = high1 + 168.5;
+		weight1 =  weight1 + 64.2;
+		System.out.println(Math.floor(weight1/((high1*high1)/10000)));
+		
+	// 10.
+		// 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。
+		// ただしif文は使いません
+		System.out.println(i>=25);
+		
 		
 	
-		
-		
-		
-		
-		
-		
+	
 	}
 
 }

@@ -310,8 +310,8 @@ public class Note {
 		System.getProperty("line.separator");
 		System.out.println("私はが好きです。" +2025+"年から。");
 		
-		
-
+		// 小数点弟１位まで
+		System.out.println(Math.ceil(1.34));   // 2.0
 	
 	
 		 
