@@ -262,9 +262,60 @@ public class Qes1_13 {
 		// ただしif文は使いません
 		System.out.println(i>=25);
 		
+	// 11.
+		// 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
+		// int/double→String
+		// String 変数 = String.valueOf(int/double型の変数);
+		
+		// 年齢は24歳です int→String
+		i=24;
+		String age= String.valueOf(i);
+		System.out.println("年齢は"+ age + "歳です");
+		
+		// 身長168.5cmです double→String
+        d=168.5;
+        String height= String.valueOf(d);
+	    System.out.println("身長は"+ d + "cmです");
+				
+		// 体重は64.2kgです double→String
+		d= 64.2;
+		String weigh= String.valueOf(d);
+		System.out.println("体重は"+ d + "kgです");
+		
+		
+		
+	// 12.
+		// 11で変換した【年齢・身長】を整数型に変換して出力してください
+		
+		// 24歳
+		/*
+		 * Stirng age="24";
+		*/
+		int nu= Integer.parseInt(age); // String型の変数age→int型の変数nu
+		System.out.println(nu+"歳");
+		
+		
+		// 身長168.5cm String→ int
+		/* 
+		String height= "168.5";
+		*/
+		// double mm= Integer.parseInt(height); // String型の変数height→　int型の変数mm
+		// System.out.println(mm);
 		
 	
-	
+	// 13.
+		// 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
+		// ただしif文は使わないでください
+		int age1=25;
+	    boolean isAge= (age1==25);
+	    // System.out.println(isAge);
+	    
+	    double hight = 168.5;
+	    boolean isheight= (hight >= 160);
+	    // System.out.println(isheight);
+	    
+	    System.out.println(isAge && isheight);
+	    
 	}
 
 }

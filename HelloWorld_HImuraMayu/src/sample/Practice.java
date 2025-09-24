@@ -96,6 +96,56 @@ public class Practice {
 			System.out.println(e==f);
 			System.out.println(e!=f);
 			
+			// 自動型変換
+			int nm =100;
+			long bigNum=nm; // int→long(自動型変換)
+			System.out.println(bigNum);
+			
+			int nm1=1010;
+			double dou=nm1; // int→double(自動型変換)
+			System.out.println(nm1);
+			
+			// 強制型変換
+			// 強制型変換のルール　書き方: (変換後の型) 変数
+			
+			// doubele→int(小数点以下切り捨て)
+			dou=10.546;
+			int nn=(int)dou;
+			System.out.println(nn); // double → int (小数点以下が切り捨て)
+
+			// 文字列 (String) と数値の変換
+			// ”123″ を int に変換し、計算可能に　（String→int に変換）
+			String stre= "123";
+			int jk =Integer.parseInt(stre); // String→int に変換
+			System.out.println(jk+"個");
+			// String→int に変換 する場合、Integer.parseIntを使う。
+
+			
+			// int→String
+			int h=123;
+			String bl=String.valueOf(h);
+			System.out.println(bl+"ページ");
+			// int→Stringに変換する場合、String valueOfを使う
+			
+			// byte や short の計算に注意
+			// byte や short の計算結果は自動的に int に拡張されるため、明示的にキャストが必要になることがある。
+			
+			// byte→byte
+			byte j=80;
+			byte s=4;
+			byte sum1= (byte) (j+s);
+			System.out.println(sum1); // 強制型変換が必要
+			
+			/*
+			 * String と数値の変換で例外 (NumberFormatException) に注意
+			 * String を int や double に変換する際、
+			 * 変換できない値だとエラー (NumberFormatException) になる
+			 */
+
+		
+
+
+			
 			
 
 
