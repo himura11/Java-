@@ -4,31 +4,31 @@ public class Practice {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		{
+		
 			int x = 5;
 		    x = x + 3; // xの最新値(5)に3を足して、xに再代入する
 		    System.out.println(x); // 出力: 8
 		    x += 3; // x = x + 3 と同じ
 		   System.out.println(x); // 出力: 11
-		}
 		
-		{
+		
+		
 			int n=4;
 		    n = n+6; // nの最新値（4）に6を足して、nに再代入する
 		    System.out.println(n); //　出力：10
 		    n += 5; // n = n + 5 と同じ
 		    System.out.println (n); // 出力:15
-		}
 		
-		{
+		
+		
 			//　自動変換（int→double,小→大）
 			int a= 10;
 			double b=a;
 			System.out.println(b); //　自動変換（int→double,小→大）
 			
 			// 手動型変換{double(64bit)→int(32bit),大→小}
-			double x= 9.99;
-			int y= (int) x; //明示的変換
+			double x1= 9.99;
+			int y= (int) x1; //明示的変換
 			System.out.println(y); // 小数点以下切り捨て
 			
 			// String（Object）→int(32bit)
@@ -54,8 +54,8 @@ public class Practice {
 			
 			// int → String
 			// 123 を “123” に変換し、文字列と結合可能に
-			int n = 123;
-			String st=String.valueOf(n);// intを文字列に変換
+			int n1 = 123;
+			String st=String.valueOf(n1);// intを文字列に変換
 			System.out.println(st);
 			System.out.println(st+ "円");
 			
@@ -140,32 +140,21 @@ public class Practice {
 			 * String と数値の変換で例外 (NumberFormatException) に注意
 			 * String を int や double に変換する際、
 			 * 変換できない値だとエラー (NumberFormatException) になる
-			 */
-
-		
-
-
+			 */	
 			
 			
-
-
-			
-			
-			
-			
-
-
-			
-
-
-			
-			
+			float ans = 7 / 6;
+		    System.out.println(ans);
+		    
+		    
+		    int a11 = 10;
+		    int b11 = 10;
+		    System.out.println(++a11 + 50);
+		    System.out.println(b11++ + 50);
+		   
 		}
-		
-		
-		
 		
 	}
 
-}
+
       

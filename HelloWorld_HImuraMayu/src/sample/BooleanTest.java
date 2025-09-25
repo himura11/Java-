@@ -1,6 +1,6 @@
 package sample;
 
-public class Boolean {
+public class BooleanTest {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
@@ -17,7 +17,10 @@ public class Boolean {
 		  boolean condition1=(10>5);
 		  boolean condition2=(8<20);
 		  System.out.println(condition1 && condition2);
+		  
+	boolean isLogin= true;
+	if (isLogin) {
+		System.out.println("ログイン済み");
 	}
-
-
+	}
 }

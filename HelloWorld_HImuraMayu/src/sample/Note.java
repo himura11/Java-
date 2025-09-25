@@ -314,10 +314,9 @@ public class Note {
 		System.out.println(Math.ceil(1.34));   // 2.0
 	
 	
-		 
-		 
-		 
-		 
+		int n1 = 22, n2 = 67, n3 = 0, n4 = 47, n5 = 17, n6 = 50;
+		boolean b1 = true;
+		System.out.println((n3 < n5) || (n2 <= n1));
 
 
 		

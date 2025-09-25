@@ -67,11 +67,11 @@ public class Qes1_13 {
 		System.out.println(letter);
 		
 		// 初期値nullで初期化
-		name="null";
+		name = null;
 		System.out.println(name);
 		
 		// 初期値falseで初期化
-		isJavaFun =false;
+		isJavaFun = false;
 		System.out.println(isJavaFun);	
 	
 		
@@ -194,7 +194,9 @@ public class Qes1_13 {
 		// BMIの計算式（BMIは少数第一位で表されることが多いためdouble型）
 		double high = 170.5;
 		double weight = 62.5;
-		System.out.println(Math.ceil(weight/((high*high)/10000.0)));
+	    // System.out.println(weight/(high*high));
+	    System.out.println(String.format("%.1f", 21.49));
+		//System.out.println(String.format "%.1f" (weight/(high*high);
 		//Math.ceilで小数点一桁まで表示
 		
 	// 8.
@@ -273,14 +275,14 @@ public class Qes1_13 {
 		System.out.println("年齢は"+ age + "歳です");
 		
 		// 身長168.5cmです double→String
-        d=168.5;
-        String height= String.valueOf(d);
-	    System.out.println("身長は"+ d + "cmです");
+		double heigh = 168.5;
+        String str = String.valueOf(heigh);
+	    System.out.println("身長は"+ str + "cmです");
 				
 		// 体重は64.2kgです double→String
-		d= 64.2;
-		String weigh= String.valueOf(d);
-		System.out.println("体重は"+ d + "kgです");
+		double weigh = 64.2;
+		String str1 = String.valueOf(weigh);
+		System.out.println("体重は"+ str1 + "kgです");
 		
 		
 		
@@ -306,7 +308,7 @@ public class Qes1_13 {
 	// 13.
 		// 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		// ただしif文は使わないでください
-		int age1=25;
+		int age1=24;
 	    boolean isAge= (age1==25);
 	    // System.out.println(isAge);
 	    
@@ -314,7 +316,7 @@ public class Qes1_13 {
 	    boolean isheight= (hight >= 160);
 	    // System.out.println(isheight);
 	    
-	    System.out.println(isAge && isheight);
+	    System.out.println(isAge || isheight);
 	    
 	}
 
