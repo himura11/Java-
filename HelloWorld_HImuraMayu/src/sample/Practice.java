@@ -152,6 +152,17 @@ public class Practice {
 		    System.out.println(++a11 + 50);
 		    System.out.println(b11++ + 50);
 		   
+		    
+		    // 数値→String
+		    String str1 = String.valueOf(123);
+		    System.out.println(str1+"本");
+		    
+		    String str2= Integer.toString(123);
+		    System.out.println(str2+"人");
+		    
+		    Integer num1=null;
+		    String strval=String.valueOf(num1);
+		    System.out.println("strval : " + "分からない");
 		}
 		
 	}
