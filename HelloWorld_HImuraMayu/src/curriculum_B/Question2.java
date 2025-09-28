@@ -145,6 +145,20 @@ public class Question2 {
 	    // 6, 7, 8 → "夏"
 	    // 9, 10, 11 → "秋"
 	    // それ以外の値なら "無効な月です" と表示 (※Switch文を使用してください)
+	    int month = 3;
+	    switch(month) {
+	     case 12: case 1: case 2:
+	      System.out.println("冬");
+	     case 3: case 4: case 5:
+	      System.out.println("春");
+	      break;
+	     case 6: case 7: case 8:
+	      System.out.println("夏");
+	      break;
+	     case 9: case 10: case 11:
+	      System.out.println("秋");
+	     default :
+	      System.out.println("無効な月です");
+	    }
 	}
-
 }
