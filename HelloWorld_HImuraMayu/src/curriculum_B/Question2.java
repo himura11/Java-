@@ -100,9 +100,9 @@ public class Question2 {
 	    // 表示する処理を作成してください
 	    String str=null;
 	    String hoge="";
-	    if(hoge.equals(str)) {
+	    if(hoge.equals("") || str.equals(null)) {
 	    	System.out.println("入力が無効です");
-	    }
+	    } 
 	
 	    
 	// Q9.
