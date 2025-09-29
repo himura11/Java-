@@ -69,16 +69,13 @@ public class Question2 {
 	    // int 型の変数 value を用意
 	    // value が 偶数 なら "偶数です" と表示
 	    // value が 奇数 なら "奇数です" と表示
-	    int value = 0;
-	    if (value == 0) {
+	    int value = 33 ;
+	    if (value %2 == 0) {
 	    	System.out.println("偶数です");
-	    }   else if(value !=0) {
+	    }   else {
 	    	System.out.println("奇数です"); 	
 	    }
-	 
-	   
 	  
-	    
 	// Q7.
 	    // int 型の変数 score に 0 から 100 の数値を代入
 	    // 90 以上なら "優"
@@ -101,11 +98,12 @@ public class Question2 {
 	// Q8.
 	    // 入力が null または空文字（""）のときに「入力が無効です」と
 	    // 表示する処理を作成してください
-	    String str = null;
-        if(str == null || str =="") {
+	    String str=null;
+	    String hoge="";
+	    if(hoge.equals(str)) {
 	    	System.out.println("入力が無効です");
 	    }
-	    	
+	
 	    
 	// Q9.
 	    // int 型の変数 day を用意（1～7 の数値を代入）
@@ -159,6 +157,7 @@ public class Question2 {
 	      break;
 	     case 9: case 10: case 11:
 	      System.out.println("秋");
+	      break;
 	     default :
 	      System.out.println("無効な月です");
 	    }

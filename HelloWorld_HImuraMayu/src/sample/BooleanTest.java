@@ -14,6 +14,7 @@ public class BooleanTest {
 // 論理演算子
 		// 論理積(&&)
 		// 両方がtrueのときtrue
+		
 		  boolean condition1=(10>5);
 		  boolean condition2=(8<20);
 		  System.out.println(condition1 && condition2);
@@ -27,6 +28,12 @@ public class BooleanTest {
 	      System.out.println("1 : (X>70 && y<=80)  =   " + (x>70 && y<=80));
 	      System.out.println("2 : (x>70 || y<=80)  =   " + (x>70 || y <=80));
 	      System.out.println("3 : !(x>70) = " + !(x>70));
+	      
+	      
+	     
+	      
+	  
+	     
 	    		  
 	  
 	}
