@@ -46,7 +46,11 @@ public class Question2 {
 	    int x= 30;
 	    int y= 15;
 	    int z= 50;
-	    if(z >x && z>y) {
+	    if (x>y && x>z){
+	    	System.out.println("xは一番大きい数値です");
+	    }   else if(y>x && y>z) {
+	    	System.out.println("yは一番大きい数値です");
+	    }   else if(z>x && z>y) {
 	    	System.out.println("zは一番大きい数値です");
 	    }
 	    
@@ -98,9 +102,9 @@ public class Question2 {
 	// Q8.
 	    // 入力が null または空文字（""）のときに「入力が無効です」と
 	    // 表示する処理を作成してください
-	    String str=null;
-	    String hoge="";
-	    if(hoge.equals("") || str.equals(null)) {
+	    String str=null; // nullは文字列ではないので、==nullで判定
+	    String hoge=""; // ” ”の空白は文字列であるため、equalsを使って判定
+	    if(str== null || hoge.equals("")) {
 	    	System.out.println("入力が無効です");
 	    } 
 	
