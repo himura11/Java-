@@ -102,9 +102,23 @@ public class ForTest {
 			}
 			System.out.println(g);
 		}
-		System.out.print("終了です");
+		System.out.println("終了です");
 		// gを3で割って余りが1の時に処理をスキップしています。
 		// (式2の条件判定がtrueである限りループは続く)
+		
+		
+		// for 文を使って 1 から 3までの合計 を表示
+		int sum=0;
+		sum= sum+1;
+		sum= sum+2;
+		sum= sum+3;
+		System.out.println(sum);
+		
+		for(int t=1; t<=3; t++) {
+			sum= sum+t;
+		}   System.out.println(sum);
+		
+
 
 
     }

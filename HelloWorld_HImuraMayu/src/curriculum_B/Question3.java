@@ -27,12 +27,23 @@ public class Question3 {
 		for(int y=10; y>=1; y --) {
 			System.out.println(y);
 		}
+		System.out.println("次はQ4です");
 		
 	// Q4.
 		// for 文を使って 1 から 100 までの合計 を表示
+		int sum=0;
+		for(int z=1; z<=100; z++) {
+			sum=sum+z;
+		}   System.out.println(sum);
+		
+		System.out.println("次はQ5です");
 		
 	// Q5.
-		// for 文を使って 以下のような三角形を出力
+		// for 文を使って 以下のような三角形を出力 1,2,3,4,5
+		String []r= {"*","**","***","****","*****"};
+		for(String str : r) {
+			System.out.println(str);
+		}
 		
 		System.out.println("次はQ6です");
 		
@@ -65,10 +76,8 @@ public class Question3 {
 	
 	// Q9.
 		// while 文を使って 1 から 100 までの合計 を表示
-		int j=1;
-		while(j>=100) {
-			System.out.println();
-		}
+		
+		
 	
 	// Q10.
 		/*
