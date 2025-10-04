@@ -114,13 +114,45 @@ public class ForTest {
 		sum= sum+3;
 		System.out.println(sum);
 		
-		for(int t=1; t<=3; t++) {
-			sum= sum+t;
-		}   System.out.println(sum);
+		// for 文を使って 1 から 10までの合計 を表示
+		int total=0; // 合計を格納する変数
+		for(int t=1; t<=10; t++) {
+			total= total+t;
+		}   System.out.println(total);
 		
+	// 拡張for文
+		// 拡張 for 文は他の繰り返しを行う文とは異なり条件式がありません。
+		// 対象となる配列やコレクションの要素の数だけ繰り返しを行います。
+		String member[]= {"糸師凛", "糸師冴", "ミヒャエル・カイザー"};
+		for(String str : member) {
+			System.out.println(str);
+		}
+		
+	// for文 掛け算表
+		for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= 9; j++) {
+                System.out.printf("%02d * %02d = %02d", i, j, i * j);
+                if (j < 9) {
+                    System.out.print(" || ");
+                }
+            }
+            // 内側のfor文が1周終わったら、改行して次の段に移ります。
+            System.out.println();
+           
+            
+           
+       
+		}
+	}
+            
+        
+ 
+
+		
+	
 
 
 
-    }
+    
 
 }
