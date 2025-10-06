@@ -150,13 +150,12 @@ public class Question3 {
 		 String input = sc.nextLine();
 		 
 		 // 入力を「、」で分ける
-	     String[] items = {""};
+	     String[] items = input.split("、");
 		 
 		 // テレビとディスプレイは特別ルール
 		 int tv = rand.nextInt(12); // 0 から 12未満（＝11まで）の整数をランダムに出す
 		 int dp = 11-tv;
-		 
-	
+		
 		// 入力された商品を1つずつ処理（拡張for文）
 		 for(String item : items) {
 			 switch (item) {
@@ -165,33 +164,25 @@ public class Question3 {
 			   case "扇風機":
 			   case "洗濯機":
 			   case "加湿器":
+				 // 残り台数は0～11のランダム
 		         System.out.println(item +"の残り台数は"+ rand.nextInt(12)+"台数です");
 		         break;
 		       
+		       // 条件演算子を使ってテレビかディスプレイかを判定
 			   case "テレビ":
 			   case "ディスプレイ":
-				 int stock = item.equals("テレビ")?tv : dp;
+				 int stock = item.equals("テレビ") ? tv : dp;
 			     System.out.println(item + "の残り台数は"+stock+"台です");
-			    
-			    
+			     break;        
+			     
+			    // 指定されていない商品
 			    default:
 			     System.out.println("指定の商品ではありません");
-		
-			     
-	     // Scannerを閉じる
-		sc.close(); 				 
+			     break;		 
 			 }
 		 }
-		 
-		 
-		 
-				
-		 
-		 
-
-
-			
-
+		  // Scannerを閉じる
+			sc.close(); 
 	}
 }
 		
