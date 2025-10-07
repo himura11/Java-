@@ -102,6 +102,12 @@ public class Play {
        // Mapのサイズ
         System.out.println(scores2.size());
        // Mapの全要素を表示
+        
+        String str ="A.BC..D";
+        String[] split1 = str.split(".");
+        System.out.println(Arrays.toString(split1));
+        String[] split2= str.split("\\."); // → [] ※長さ0の文字列
+        System.out.println(Arrays.toString(split2));
       
 
 

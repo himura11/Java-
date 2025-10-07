@@ -1,6 +1,7 @@
 package curriculum_B;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Question4 {
 
@@ -74,7 +75,33 @@ public class Question4 {
 		// ユーザーが入力した数が 配列に含まれているか を判定し、結果を表示
 		// 結果：（”入力した値”は配列に含まれています／含まれていません）
 		
+		int[] nums = {4, 7, 10, 15, 20};
 		
+		// ユーザーから入力を受け取る
+		Scanner sc = new Scanner(System.in); // ユーザーから入力を受け取る準備
+		System.out.println("入力してください");
+		 int input= sc.nextInt();
+		System.out.println(input);
+		 
+		// 配列に含まれているかを調べるためのフラグ
+		boolean found = false; // 最初は「見つかっていない」
+		
+        // for文で配列の中身を順にチェック
+		for(int i= 0; i<nums.length; i++) {
+			if(nums[i] == input) {
+				found = true;
+				break; // 見つけたらループを終了
+			}
+		}
+		// 結果を表示
+		if(found) {
+			System.out.println(input + " は配列に含まれています。 ");
+		    }else {
+				System.out.println(input+ " は配列に含まれていません。 ");
+			}
+        
+		sc.close();
+	
 
 	}
 
