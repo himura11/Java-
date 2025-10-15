@@ -1,6 +1,7 @@
 package curriculum_B;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Question4 {
 
@@ -55,7 +56,7 @@ public class Question4 {
 		// 配列のすべての要素を 2 倍 し、結果を表示
 		// 結果を表示する際の処理に拡張for文を使用してください
 		
-		/*int[] counts = {1, 2, 3, 4, 5};
+	int[] counts = {1, 2, 3, 4, 5};
 		
 		// すべての要素を2倍にする（普通のfor文で処理）
 		for(int i= 0; i<counts.length; i++) {
@@ -96,7 +97,7 @@ public class Question4 {
 		    }else {
 				System.out.println(input+ " は配列に含まれていません。 ");
 			}
-		sc.close(); */
+		sc.close(); 
 		
 		System.out.println("次はQ7です");
 		

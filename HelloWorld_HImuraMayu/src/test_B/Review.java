@@ -8,8 +8,7 @@ public class Review {
 		for(int i = 0; i < numbers.length; i++) {
 			System.out.println("numbers["+i+"]="+numbers[i]);
 		}
-		
-		
+	
 	// 糸師→冴か凛、バニー→19と出力するコード
 		// キャラクター名を配列に入れる
 		String names[] = {"糸師", "バニー", "冴", "凛"};
@@ -25,7 +24,6 @@ public class Review {
 				System.out.println("対象外");
 			}
 		}
-		
 		
 		//配列を順番に表示するJavaの例
 		String characters[] = {"冴", "凛", "バニー", "カイザー"};
@@ -105,8 +103,69 @@ public class Review {
 				for(int k=0; k<array1[i][j].length; k++) {
 					System.out.println("array1["+i+"]["+j+"]["+k+"]= "+array1[i][j][k]);
 				}
-				
 			}
 		}
+		
+		String[][]arra = {
+				{"🦉","🍵","🌹"}, // bll
+				{"☂️","🔍","💉"}  //tgak	
+		};
+		
+		// Java配列2次元型 
+		// bll : 🦉　🍵　🌹
+		// tgak: ☂️ 🔍　💉
+		
+		 // ブロック名の配列
+		String[] nam= {"bll", "tgak"};
+		// 出力
+		for(int i=0; i<arra.length; i++) {
+			System.out.print(nam[i]+" : "); // まずブロック名を表示
+			for(int j=0; j<arra[i].length; j++) {
+				System.out.print(arra[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+		// 比較例
+		//【基本データ型】→変数bの値を設定後に、変数aに0を代入しても変数bの値には影響なし
+		int a=1;
+		int b=a;
+		a=0;
+		System.out.println("a="+a);
+		System.out.println("b="+b);
+		System.out.println();
+		
+     //switch文で出力 bll : 🦉　🍵　🌹
+		String bll="🍵️"; // 出力したい絵文字
+		  switch (bll) {
+		    case "🦉":
+		    	System.out.println("rn");
+		    	break;
+		    case"🍵":
+		    	System.out.println("se");
+		    	break;
+		    case"🌹":
+		    	System.out.println("ki");
+		    	break;
+		    default:
+		    	System.out.println("対象外");
+		}
+
+		// tgak の3つの絵文字☂️,💉,🔍️を順番に switch 文で出力する例 
+		  // tgakの絵文字配列
+		  String[] tgak = {"☂️", "💉", "🔍"};
+		  
+		  // 配列を順番にチェック
+		 for(int i=0; i<tgak.length; i++) {
+			 switch(tgak[i]) {
+			   case"傘":
+				   System.out.println("傘です");
+			   case"💉":
+				   System.out.println("注射です");
+			   case"🔍":
+				   System.out.println("虫眼鏡です");
+			 }
+		 }
 	}
+	
 }
