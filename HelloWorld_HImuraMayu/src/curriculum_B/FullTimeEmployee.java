@@ -15,12 +15,12 @@ public class FullTimeEmployee extends Employee{
 	public int calculateDailyWage(int hoursWorked) {
 		if(hoursWorked<=8) {
 			// 8時間以内は普通の時給
-			return hoursWorked* HOURLY_RATE;
+			return hoursWorked * HOURLY_RATE;
 		} else {
 			// 残業時間を計算
 			int overtime= hoursWorked - 8;
 			// 残業分は1.25倍
-			return (8*HOURLY_RATE)+ (int)(overtime*HOURLY_RATE*1.25);
+			return (8*HOURLY_RATE)+ (int)(overtime*HOURLY_RATE * 1.25);
 		}
 	}
 }

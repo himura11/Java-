@@ -5,24 +5,8 @@ public class Main {
 
 	public static void main(String[] args) {
 	/*
-	 // --- 22.1 ①基本概念 ----
-	    // Employeeクラスのインスタンスを生成
-		Employee emp = new Employee();
-		
-	    // nameに「山田太郎」を設定
-		emp.name=("山田太郎");
-		// work()メソッドを呼び出して出力
-		emp.work();
-		
-	// --- 22.2 ②クラスとオブジェクト  ----
-        // Employeeクラスのインスタンス生成
-		// Employee emp = new Employee();　// ←既存
-		
-		// フィールドに値を設定
-		emp.employeeId=("E001");
-		emp.name =("佐藤太郎");
-		// メソッド呼び出し
-		emp.showInfo();
+
+	
 		
 	// --- 22.3 ③カプセル化 ----	
 		// Employee オブジェクトを作る
