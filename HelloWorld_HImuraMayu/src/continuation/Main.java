@@ -1,15 +1,11 @@
 
-package curriculum_B;
+package continuation;
 
 public class Main {
 
 	public static void main(String[] args) {
-	/*
-
 	
-		
      // --- 22.4 ④継承 ----	
-	*/
 		
 	// 正社員オブジェクトを作成
 		FullTimeEmployee full = new FullTimeEmployee("F01","山田太郎");
@@ -24,8 +20,6 @@ public class Main {
 	 // 結果を出力
 		System.out.println("正社員の給与: "+ fullWage + "円");
 		System.out.println("パート社員の給与: "+ partWage + "円");
-		
-	}
-	
+	}	
 }
 

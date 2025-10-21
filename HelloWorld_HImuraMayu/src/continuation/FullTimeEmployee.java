@@ -1,4 +1,4 @@
-package curriculum_B;
+package continuation;
 
 public class FullTimeEmployee extends Employee{
 	

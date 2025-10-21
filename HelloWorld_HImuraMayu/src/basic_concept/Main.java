@@ -9,7 +9,7 @@ public class Main {
 		Employee emp = new Employee();
 		
 		// nameに「山田太郎」を設定
-		emp.name=("山田太郎");
+		emp.name="山田太郎";
 		
 		// work()メソッドを呼び出して出力
 		emp.work();

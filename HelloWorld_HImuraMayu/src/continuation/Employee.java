@@ -1,10 +1,5 @@
-package curriculum_B;
+package continuation;
 abstract class Employee {
-
-
-
-
-
 		
 // --- 22.4 ④継承 ----	
 		// 抽象クラス Employee
@@ -23,11 +18,9 @@ abstract class Employee {
 		  }
 		  public String getName() {
 			  return name;
-		  }
-		  
+		  }	  
 		  // 抽象メソッド（サブクラスで中身を実装する）
 		  public abstract int calculateDailyWage(int hoursWorked);
-
 }
 
 

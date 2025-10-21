@@ -1,4 +1,4 @@
-package curriculum_B;
+package continuation;
 
 public class PartTimeEmployee extends Employee {
 	// 定数: 時給
