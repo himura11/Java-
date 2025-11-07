@@ -8,7 +8,4 @@ public class CPU {
 	public int getHand() {
 		return rand.nextInt(3); // 0,1,2 のいずれか
 	}
-	
-	
-
 }
